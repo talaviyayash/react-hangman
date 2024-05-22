@@ -1,7 +1,5 @@
 import { memo } from "react";
 
-export default memo(GuessedWord);
-
 const WrapInDiv = memo(function WrapInDiv({ valueIsAlradayGuessed, value }) {
   return (
     <>
@@ -26,3 +24,4 @@ function GuessedWord({ correctGuessedWord, wordWithHint }) {
     </>
   );
 }
+export default memo(GuessedWord);
