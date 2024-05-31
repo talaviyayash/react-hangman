@@ -1,12 +1,5 @@
 import { memo } from "react";
-
-const WrapInDiv = memo(function WrapInDiv({ valueIsAlradayGuessed, value }) {
-  return (
-    <>
-      <div>{valueIsAlradayGuessed && value}</div>
-    </>
-  );
-});
+import WrapInDiv from "../../shared/WrapInDiv";
 
 function GuessedWord({ correctGuessedWord, wordWithHint }) {
   return (
